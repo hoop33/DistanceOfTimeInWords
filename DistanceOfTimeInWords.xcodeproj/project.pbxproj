@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C7A88B62135460F2006F686D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A88B61135460F2006F686D /* UIKit.framework */; };
+		C7A88B64135460F2006F686D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A88B63135460F2006F686D /* Foundation.framework */; };
+		C7A88B66135460F2006F686D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A88B65135460F2006F686D /* CoreGraphics.framework */; };
+		C7A88B6C135460F2006F686D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7A88B6A135460F2006F686D /* InfoPlist.strings */; };
+		C7A88B6F135460F2006F686D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A88B6E135460F2006F686D /* main.m */; };
+		C7A88B72135460F2006F686D /* DistanceOfTimeInWordsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A88B71135460F2006F686D /* DistanceOfTimeInWordsAppDelegate.m */; };
+		C7A88B75135460F2006F686D /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7A88B73135460F2006F686D /* MainWindow.xib */; };
+		C7A88B78135460F2006F686D /* DistanceOfTimeInWordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A88B77135460F2006F686D /* DistanceOfTimeInWordsViewController.m */; };
+		C7A88B7B135460F2006F686D /* DistanceOfTimeInWordsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7A88B79135460F2006F686D /* DistanceOfTimeInWordsViewController.xib */; };
+		C7A88B82135460F3006F686D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A88B61135460F2006F686D /* UIKit.framework */; };
+		C7A88B83135460F3006F686D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A88B63135460F2006F686D /* Foundation.framework */; };
+		C7A88B84135460F3006F686D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A88B65135460F2006F686D /* CoreGraphics.framework */; };
+		C7A88B8C135460F3006F686D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7A88B8A135460F3006F686D /* InfoPlist.strings */; };
+		C7A88B8F135460F3006F686D /* DistanceOfTimeInWordsTests.h in Resources */ = {isa = PBXBuildFile; fileRef = C7A88B8E135460F3006F686D /* DistanceOfTimeInWordsTests.h */; };
+		C7A88B91135460F3006F686D /* DistanceOfTimeInWordsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A88B90135460F3006F686D /* DistanceOfTimeInWordsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C7A88B85135460F3006F686D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7A88B54135460F2006F686D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7A88B5C135460F2006F686D;
+			remoteInfo = DistanceOfTimeInWords;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C7A88B5D135460F2006F686D /* DistanceOfTimeInWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DistanceOfTimeInWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7A88B61135460F2006F686D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C7A88B63135460F2006F686D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C7A88B65135460F2006F686D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C7A88B69135460F2006F686D /* DistanceOfTimeInWords-Info.plist */ = {isa = PBXFileReference; path = "DistanceOfTimeInWords-Info.plist"; sourceTree = "<group>"; };
+		C7A88B6B135460F2006F686D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C7A88B6D135460F2006F686D /* DistanceOfTimeInWords-Prefix.pch */ = {isa = PBXFileReference; path = "DistanceOfTimeInWords-Prefix.pch"; sourceTree = "<group>"; };
+		C7A88B6E135460F2006F686D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C7A88B70135460F2006F686D /* DistanceOfTimeInWordsAppDelegate.h */ = {isa = PBXFileReference; path = DistanceOfTimeInWordsAppDelegate.h; sourceTree = "<group>"; };
+		C7A88B71135460F2006F686D /* DistanceOfTimeInWordsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DistanceOfTimeInWordsAppDelegate.m; sourceTree = "<group>"; };
+		C7A88B74135460F2006F686D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		C7A88B76135460F2006F686D /* DistanceOfTimeInWordsViewController.h */ = {isa = PBXFileReference; path = DistanceOfTimeInWordsViewController.h; sourceTree = "<group>"; };
+		C7A88B77135460F2006F686D /* DistanceOfTimeInWordsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DistanceOfTimeInWordsViewController.m; sourceTree = "<group>"; };
+		C7A88B7A135460F2006F686D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DistanceOfTimeInWordsViewController.xib; sourceTree = "<group>"; };
+		C7A88B81135460F3006F686D /* DistanceOfTimeInWordsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DistanceOfTimeInWordsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7A88B89135460F3006F686D /* DistanceOfTimeInWordsTests-Info.plist */ = {isa = PBXFileReference; path = "DistanceOfTimeInWordsTests-Info.plist"; sourceTree = "<group>"; };
+		C7A88B8B135460F3006F686D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C7A88B8D135460F3006F686D /* DistanceOfTimeInWordsTests-Prefix.pch */ = {isa = PBXFileReference; path = "DistanceOfTimeInWordsTests-Prefix.pch"; sourceTree = "<group>"; };
+		C7A88B8E135460F3006F686D /* DistanceOfTimeInWordsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DistanceOfTimeInWordsTests.h; sourceTree = "<group>"; };
+		C7A88B90135460F3006F686D /* DistanceOfTimeInWordsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DistanceOfTimeInWordsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C7A88B5A135460F2006F686D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7A88B62135460F2006F686D /* UIKit.framework in Frameworks */,
+				C7A88B64135460F2006F686D /* Foundation.framework in Frameworks */,
+				C7A88B66135460F2006F686D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7A88B7D135460F3006F686D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7A88B82135460F3006F686D /* UIKit.framework in Frameworks */,
+				C7A88B83135460F3006F686D /* Foundation.framework in Frameworks */,
+				C7A88B84135460F3006F686D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C7A88B52135460F2006F686D = {
+			isa = PBXGroup;
+			children = (
+				C7A88B67135460F2006F686D /* DistanceOfTimeInWords */,
+				C7A88B87135460F3006F686D /* DistanceOfTimeInWordsTests */,
+				C7A88B60135460F2006F686D /* Frameworks */,
+				C7A88B5E135460F2006F686D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C7A88B5E135460F2006F686D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7A88B5D135460F2006F686D /* DistanceOfTimeInWords.app */,
+				C7A88B81135460F3006F686D /* DistanceOfTimeInWordsTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7A88B60135460F2006F686D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7A88B61135460F2006F686D /* UIKit.framework */,
+				C7A88B63135460F2006F686D /* Foundation.framework */,
+				C7A88B65135460F2006F686D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7A88B67135460F2006F686D /* DistanceOfTimeInWords */ = {
+			isa = PBXGroup;
+			children = (
+				C7A88B70135460F2006F686D /* DistanceOfTimeInWordsAppDelegate.h */,
+				C7A88B71135460F2006F686D /* DistanceOfTimeInWordsAppDelegate.m */,
+				C7A88B73135460F2006F686D /* MainWindow.xib */,
+				C7A88B76135460F2006F686D /* DistanceOfTimeInWordsViewController.h */,
+				C7A88B77135460F2006F686D /* DistanceOfTimeInWordsViewController.m */,
+				C7A88B79135460F2006F686D /* DistanceOfTimeInWordsViewController.xib */,
+				C7A88B68135460F2006F686D /* Supporting Files */,
+			);
+			path = DistanceOfTimeInWords;
+			sourceTree = "<group>";
+		};
+		C7A88B68135460F2006F686D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7A88B69135460F2006F686D /* DistanceOfTimeInWords-Info.plist */,
+				C7A88B6A135460F2006F686D /* InfoPlist.strings */,
+				C7A88B6D135460F2006F686D /* DistanceOfTimeInWords-Prefix.pch */,
+				C7A88B6E135460F2006F686D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C7A88B87135460F3006F686D /* DistanceOfTimeInWordsTests */ = {
+			isa = PBXGroup;
+			children = (
+				C7A88B8E135460F3006F686D /* DistanceOfTimeInWordsTests.h */,
+				C7A88B90135460F3006F686D /* DistanceOfTimeInWordsTests.m */,
+				C7A88B88135460F3006F686D /* Supporting Files */,
+			);
+			path = DistanceOfTimeInWordsTests;
+			sourceTree = "<group>";
+		};
+		C7A88B88135460F3006F686D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7A88B89135460F3006F686D /* DistanceOfTimeInWordsTests-Info.plist */,
+				C7A88B8A135460F3006F686D /* InfoPlist.strings */,
+				C7A88B8D135460F3006F686D /* DistanceOfTimeInWordsTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C7A88B5C135460F2006F686D /* DistanceOfTimeInWords */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7A88B94135460F3006F686D /* Build configuration list for PBXNativeTarget "DistanceOfTimeInWords" */;
+			buildPhases = (
+				C7A88B59135460F2006F686D /* Sources */,
+				C7A88B5A135460F2006F686D /* Frameworks */,
+				C7A88B5B135460F2006F686D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DistanceOfTimeInWords;
+			productName = DistanceOfTimeInWords;
+			productReference = C7A88B5D135460F2006F686D /* DistanceOfTimeInWords.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C7A88B80135460F3006F686D /* DistanceOfTimeInWordsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7A88B97135460F3006F686D /* Build configuration list for PBXNativeTarget "DistanceOfTimeInWordsTests" */;
+			buildPhases = (
+				C7A88B7C135460F3006F686D /* Sources */,
+				C7A88B7D135460F3006F686D /* Frameworks */,
+				C7A88B7E135460F3006F686D /* Resources */,
+				C7A88B7F135460F3006F686D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7A88B86135460F3006F686D /* PBXTargetDependency */,
+			);
+			name = DistanceOfTimeInWordsTests;
+			productName = DistanceOfTimeInWordsTests;
+			productReference = C7A88B81135460F3006F686D /* DistanceOfTimeInWordsTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C7A88B54135460F2006F686D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Grailbox;
+			};
+			buildConfigurationList = C7A88B57135460F2006F686D /* Build configuration list for PBXProject "DistanceOfTimeInWords" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C7A88B52135460F2006F686D;
+			productRefGroup = C7A88B5E135460F2006F686D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7A88B5C135460F2006F686D /* DistanceOfTimeInWords */,
+				C7A88B80135460F3006F686D /* DistanceOfTimeInWordsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C7A88B5B135460F2006F686D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7A88B6C135460F2006F686D /* InfoPlist.strings in Resources */,
+				C7A88B75135460F2006F686D /* MainWindow.xib in Resources */,
+				C7A88B7B135460F2006F686D /* DistanceOfTimeInWordsViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7A88B7E135460F3006F686D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7A88B8C135460F3006F686D /* InfoPlist.strings in Resources */,
+				C7A88B8F135460F3006F686D /* DistanceOfTimeInWordsTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C7A88B7F135460F3006F686D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7A88B59135460F2006F686D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7A88B6F135460F2006F686D /* main.m in Sources */,
+				C7A88B72135460F2006F686D /* DistanceOfTimeInWordsAppDelegate.m in Sources */,
+				C7A88B78135460F2006F686D /* DistanceOfTimeInWordsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7A88B7C135460F3006F686D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7A88B91135460F3006F686D /* DistanceOfTimeInWordsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C7A88B86135460F3006F686D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7A88B5C135460F2006F686D /* DistanceOfTimeInWords */;
+			targetProxy = C7A88B85135460F3006F686D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C7A88B6A135460F2006F686D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7A88B6B135460F2006F686D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C7A88B73135460F2006F686D /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7A88B74135460F2006F686D /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		C7A88B79135460F2006F686D /* DistanceOfTimeInWordsViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7A88B7A135460F2006F686D /* en */,
+			);
+			name = DistanceOfTimeInWordsViewController.xib;
+			sourceTree = "<group>";
+		};
+		C7A88B8A135460F3006F686D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7A88B8B135460F3006F686D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C7A88B92135460F3006F686D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C7A88B93135460F3006F686D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		C7A88B95135460F3006F686D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DistanceOfTimeInWords/DistanceOfTimeInWords-Prefix.pch";
+				INFOPLIST_FILE = "DistanceOfTimeInWords/DistanceOfTimeInWords-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C7A88B96135460F3006F686D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DistanceOfTimeInWords/DistanceOfTimeInWords-Prefix.pch";
+				INFOPLIST_FILE = "DistanceOfTimeInWords/DistanceOfTimeInWords-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C7A88B98135460F3006F686D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DistanceOfTimeInWords.app/DistanceOfTimeInWords";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DistanceOfTimeInWordsTests/DistanceOfTimeInWordsTests-Prefix.pch";
+				INFOPLIST_FILE = "DistanceOfTimeInWordsTests/DistanceOfTimeInWordsTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C7A88B99135460F3006F686D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DistanceOfTimeInWords.app/DistanceOfTimeInWords";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DistanceOfTimeInWordsTests/DistanceOfTimeInWordsTests-Prefix.pch";
+				INFOPLIST_FILE = "DistanceOfTimeInWordsTests/DistanceOfTimeInWordsTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C7A88B57135460F2006F686D /* Build configuration list for PBXProject "DistanceOfTimeInWords" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7A88B92135460F3006F686D /* Debug */,
+				C7A88B93135460F3006F686D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7A88B94135460F3006F686D /* Build configuration list for PBXNativeTarget "DistanceOfTimeInWords" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7A88B95135460F3006F686D /* Debug */,
+				C7A88B96135460F3006F686D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C7A88B97135460F3006F686D /* Build configuration list for PBXNativeTarget "DistanceOfTimeInWordsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7A88B98135460F3006F686D /* Debug */,
+				C7A88B99135460F3006F686D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C7A88B54135460F2006F686D /* Project object */;
+}
