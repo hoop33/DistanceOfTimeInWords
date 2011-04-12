@@ -13,5 +13,8 @@
 @private
     
 }
+- (void)testStringFormat;
+- (void)testStyleFormat;
+- (void)testDistanceOfTimeInWords;
 
 @end

@@ -10,6 +10,12 @@
 
 @interface DistanceOfTimeInWordsViewController : UIViewController {
     
+  UIDatePicker *datePicker;
+  UILabel *formattedDate;
 }
+@property (nonatomic, retain) IBOutlet UIDatePicker *datePicker;
+@property (nonatomic, retain) IBOutlet UILabel *formattedDate;
+
+- (IBAction)dateChanged;
 
 @end
