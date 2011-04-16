@@ -43,7 +43,7 @@
   NSString *About    = NSLocalizedString(@"About", @"Indicates an approximate number");
   NSString *Over     = NSLocalizedString(@"Over", @"Indicates an exceeding number");
   NSString *Almost   = NSLocalizedString(@"Almost", @"Indicates an approaching number");
-  NSString *Second   = NSLocalizedString(@"second", @"One second in time");
+  //NSString *Second   = NSLocalizedString(@"second", @"One second in time");
   NSString *Seconds  = NSLocalizedString(@"seconds", @"More than one second in time");
   NSString *Minute   = NSLocalizedString(@"minute", @"One minute in time");
   NSString *Minutes  = NSLocalizedString(@"minutes", @"More than one minute in time");
@@ -75,7 +75,7 @@
   
   switch (minutes) {
     case 0 ... 1:
-      measure = Second;
+      measure = Seconds;
       switch (seconds) {
         case 0 ... 4:
           number = 5;
@@ -107,7 +107,7 @@
       break;
     case 2 ... 44:
       number = minutes;
-      measure = Minute;
+      measure = Minutes;
       break;
     case 45 ... 89:
       number = 1;
@@ -116,7 +116,7 @@
       break;
     case 90 ... 1439:
       number = hours;
-      measure = Hour;
+      measure = Hours;
       modifier = About;
       break;
     case 1440 ... 2529:
@@ -125,7 +125,7 @@
       break;
     case 2530 ... 43199:
       number = days;
-      measure = Day;
+      measure = Days;
       break;
     case 43200 ... 86399:
       number = 1;
@@ -134,23 +134,21 @@
       break;
     case 86400 ... 525599:
       number = months;
-      measure = Month;
+      measure = Months;
       break;
     default:
       number = years;
-      measure = Year;
+      measure = number == 1 ? Year : Years;
       if (remainder < 131400) {
         modifier = About;
       } else if (remainder < 394200) {
         modifier = Over;
       } else {
         ++number;
+        measure = Years;
         modifier = Almost;
       }
       break;
-  }
-  if (number != 1) {
-    measure = [measure stringByAppendingString:@"s"];
   }
   if ([modifier length] > 0) {
     modifier = [modifier stringByAppendingString:@" "];
