@@ -28,13 +28,13 @@
 
 #pragma mark - View lifecycle
 
-/*
- // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
- - (void)viewDidLoad
- {
- [super viewDidLoad];
- }
- */
+- (void)viewDidLoad {
+  [super viewDidLoad];
+ 
+  // Set to today's date / time and update label
+  [datePicker setDate:[NSDate date] animated:NO];
+  [self dateChanged];
+}
 
 - (void)viewDidUnload {
   self.datePicker = nil;
