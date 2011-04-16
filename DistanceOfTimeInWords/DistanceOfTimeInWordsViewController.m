@@ -37,11 +37,9 @@
  */
 
 - (void)viewDidUnload {
-  [self setDatePicker:nil];
-  [self setFormattedDate:nil];
+  self.datePicker = nil;
+  self.formattedDate = nil;
   [super viewDidUnload];
-  // Release any retained subviews of the main view.
-  // e.g. self.myOutlet = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {

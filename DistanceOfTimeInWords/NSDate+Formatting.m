@@ -37,10 +37,29 @@
 }
 
 - (NSString *)distanceOfTimeInWords:(NSDate *)date {
+  NSString *Ago      = NSLocalizedString(@"ago", @"Denotes past dates");
+  NSString *FromNow  = NSLocalizedString(@"from now", @"Denotes future dates");
+  NSString *LessThan = NSLocalizedString(@"Less than", @"Indicates a less-than number");
+  NSString *About    = NSLocalizedString(@"About", @"Indicates an approximate number");
+  NSString *Over     = NSLocalizedString(@"Over", @"Indicates an exceeding number");
+  NSString *Almost   = NSLocalizedString(@"Almost", @"Indicates an approaching number");
+  NSString *Second   = NSLocalizedString(@"second", @"One second in time");
+  NSString *Seconds  = NSLocalizedString(@"seconds", @"More than one second in time");
+  NSString *Minute   = NSLocalizedString(@"minute", @"One minute in time");
+  NSString *Minutes  = NSLocalizedString(@"minutes", @"More than one minute in time");
+  NSString *Hour     = NSLocalizedString(@"hour", @"One hour in time");
+  NSString *Hours    = NSLocalizedString(@"hours", @"More than one hour in time");
+  NSString *Day      = NSLocalizedString(@"day", @"One day in time");
+  NSString *Days     = NSLocalizedString(@"days", @"More than one day in time");
+  NSString *Month    = NSLocalizedString(@"month", @"One month in time");
+  NSString *Months   = NSLocalizedString(@"months", @"More than one month in time");
+  NSString *Year     = NSLocalizedString(@"year", @"One year in time");
+  NSString *Years    = NSLocalizedString(@"years", @"More than one year in time");
+  
   NSTimeInterval since = [self timeIntervalSinceDate:date];
-  NSString *direction = since <= 0.0 ? @"ago" : @"from now";
+  NSString *direction = since <= 0.0 ? Ago : FromNow;
   since = fabs(since);
-
+  
   int seconds   = (int)since;
   int minutes   = (int)round(since / SECONDS_PER_MINUTE);
   int hours     = (int)round(since / SECONDS_PER_HOUR);
@@ -49,84 +68,84 @@
   int years     = (int)floor(since / SECONDS_PER_YEAR);
   int offset    = (int)round(floor((float)years / 4.0) * 1440.0);
   int remainder = (minutes - offset) % 525600;
-
+  
   int number;
   NSString *measure;
   NSString *modifier = @"";
-
+  
   switch (minutes) {
     case 0 ... 1:
-      measure = @"second";
+      measure = Second;
       switch (seconds) {
         case 0 ... 4:
           number = 5;
-          modifier = @"Less than";
+          modifier = LessThan;
           break;
         case 5 ... 9:
           number = 10;
-          modifier = @"Less than";
+          modifier = LessThan;
           break;
         case 10 ... 19:
           number = 20;
-          modifier = @"Less than";
+          modifier = LessThan;
           break;
         case 20 ... 39:
           number = 30;
-          modifier = @"About";
+          modifier = About;
           break;
         case 40 ... 59:
           number = 1;
-          measure = @"minute";
-          modifier = @"Less than";
+          measure = Minute;
+          modifier = LessThan;
           break;
         default:
           number = 1;
-          measure = @"minute";
-          modifier = @"About";
+          measure = Minute;
+          modifier = About;
           break;
       }
       break;
     case 2 ... 44:
       number = minutes;
-      measure = @"minute";
+      measure = Minute;
       break;
     case 45 ... 89:
       number = 1;
-      measure = @"hour";
-      modifier = @"About";
+      measure = Hour;
+      modifier = About;
       break;
     case 90 ... 1439:
       number = hours;
-      measure = @"hour";
-      modifier = @"About";
+      measure = Hour;
+      modifier = About;
       break;
     case 1440 ... 2529:
       number = 1;
-      measure = @"day";
+      measure = Day;
       break;
     case 2530 ... 43199:
       number = days;
-      measure = @"day";
+      measure = Day;
       break;
     case 43200 ... 86399:
       number = 1;
-      measure = @"month";
-      modifier = @"About";
+      measure = Month;
+      modifier = About;
       break;
     case 86400 ... 525599:
       number = months;
-      measure = @"month";
+      measure = Month;
       break;
     default:
       number = years;
-      measure = @"year";
+      measure = Year;
       if (remainder < 131400) {
-        modifier = @"About";
+        modifier = About;
       } else if (remainder < 394200) {
-        modifier = @"Over";
+        modifier = Over;
       } else {
         ++number;
-        modifier = @"Almost";
+        modifier = Almost;
       }
       break;
   }
