@@ -12,10 +12,12 @@
 @implementation DistanceOfTimeInWordsViewController
 @synthesize datePicker;
 @synthesize formattedDate;
+@synthesize modeSelector;
 
 - (void)dealloc {
   [datePicker release];
   [formattedDate release];
+  [modeSelector release];
   [super dealloc];
 }
 
@@ -30,7 +32,7 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
- 
+  
   // Set to today's date / time and update label
   [datePicker setDate:[NSDate date] animated:NO];
   [self dateChanged];
@@ -39,6 +41,7 @@
 - (void)viewDidUnload {
   self.datePicker = nil;
   self.formattedDate = nil;
+  self.modeSelector = nil;
   [super viewDidUnload];
 }
 
@@ -50,6 +53,20 @@
 - (IBAction)dateChanged {
   NSDate *date = datePicker.date;
   formattedDate.text = [date distanceOfTimeInWords];
+}
+
+- (IBAction)dateModeChanged:(id)sender {
+  switch(self.modeSelector.selectedSegmentIndex) {
+    case 0:
+      datePicker.datePickerMode = UIDatePickerModeTime;
+      break;
+    case 1:
+      datePicker.datePickerMode = UIDatePickerModeDate;
+      break;
+    case 2:
+      datePicker.datePickerMode = UIDatePickerModeDateAndTime;
+      break;
+  }
 }
 
 @end
