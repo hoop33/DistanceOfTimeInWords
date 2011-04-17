@@ -17,13 +17,13 @@ To use `NSDate+Formatting` in your application, copy `NSDate+Formatting.h` and `
 
 The first two (the ones that start with `format`) make date formatting cleaner in your code. Instead of explicitly creating, using, and release date formatters in your code, you can just call these methods directly on your date objects, passing the format string or style that you would have passed to your formatter. Examples:
 
-`[[NSDate date] formatWithString:@"MM-dd-yyyy"]`
-`[[NSDate date] formatWithStyle:NSDateFormatterFullStyle]`
+* `[[NSDate date] formatWithString:@"MM-dd-yyyy"]`
+* `[[NSDate date] formatWithStyle:NSDateFormatterFullStyle]`
 
 The next two relate to each other. Calling `distanceOfTimeInWords` with no parameters returns the distance between the source date and now. Passing a date to `distanceOfTimeInWords` returns the distance between the source date and the passed date. Examples:
 
-`[[NSDate date] distanceOfTimeInWords]`
-`[[NSDate date] distanceOfTimeInWords:[[NSDate date] dateByAddingTimeInterval:86400]]`
+* `[[NSDate date] distanceOfTimeInWords]`
+* `[[NSDate date] distanceOfTimeInWords:[[NSDate date] dateByAddingTimeInterval:86400]]`
 
 Localization
 ------------
