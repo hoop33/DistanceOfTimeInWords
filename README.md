@@ -2,6 +2,25 @@ Distance of Time in Words
 =========================
 Rails apps use a method in `date_helper.rb` called `distance_from_time_in_words` that tells approximately how long ago something happened, e.g., "10 seconds ago" or "Almost 3 hours ago." This app duplicates this functionality in Objective-C (appropriately, it does so approximately). The magic of it all is found in a category, `NSDate+Formatting`, that you can use in your own applications. In fact, the app exists only to demonstrate how to use the category.
 
+License
+-------
+Copyright 2011 Rob Warner
+@hoop33
+rwarner@grailbox.com
+http://grailbox.com
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
 About the App
 -------------
 Open the project in Xcode and run it. You can also run its unit tests (Cmd+U) which run a series of tests against the four methods in the `NSDate+Formatting` category (see below for more info on the methods). To use the app, spin the date picker backward and forward to see the "distance of time in words" between now and the selected time. You can also change the mode of the date picker control to Time, Date, and Date & Time by clicking on the appropriate segment.
