@@ -1,6 +1,4 @@
 //
-//  NSDate+Formatting.h
-//
 //  Copyright 2011 Rob Warner
 //  @hoop33
 //  rwarner@grailbox.com
