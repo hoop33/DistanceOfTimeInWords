@@ -32,5 +32,6 @@
 
 - (IBAction)dateChanged;
 - (IBAction)dateModeChanged:(id)sender;
+- (IBAction)resetDateToNow:(id)sender;
 
 @end

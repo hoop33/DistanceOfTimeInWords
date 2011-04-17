@@ -46,8 +46,7 @@
   [super viewDidLoad];
   
   // Set to today's date / time and update label
-  [datePicker setDate:[NSDate date] animated:NO];
-  [self dateChanged];
+  [self resetDateToNow:self];
 }
 
 - (void)viewDidUnload {
@@ -79,6 +78,11 @@
       datePicker.datePickerMode = UIDatePickerModeDateAndTime;
       break;
   }
+}
+
+- (IBAction)resetDateToNow:(id)sender {
+  [datePicker setDate:[NSDate date] animated:NO];
+  [self dateChanged];
 }
 
 @end

@@ -23,7 +23,7 @@ limitations under the License.
 
 About the App
 -------------
-Open the project in Xcode and run it. You can also run its unit tests (Cmd+U) which run a series of tests against the four methods in the `NSDate+Formatting` category (see below for more info on the methods). To use the app, spin the date picker backward and forward to see the "distance of time in words" between now and the selected time. You can also change the mode of the date picker control to Time, Date, and Date & Time by clicking on the appropriate segment.
+Open the project in Xcode and run it. You can also run its unit tests (Cmd+U) which run a series of tests against the four methods in the `NSDate+Formatting` category (see below for more info on the methods). To use the app, spin the date picker backward and forward to see the "distance of time in words" between now and the selected time. You can change the mode of the date picker control to Time, Date, and Date & Time by clicking on the appropriate segment. You can reset the date to now by clicking the "Reset date to now" button.
 
 How to Use NSDate+Formatting
 ----------------------------
