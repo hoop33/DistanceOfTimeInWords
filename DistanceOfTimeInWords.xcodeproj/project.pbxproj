@@ -210,6 +210,7 @@
 		C7A88B54135460F2006F686D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = Grailbox;
 			};
 			buildConfigurationList = C7A88B57135460F2006F686D /* Build configuration list for PBXProject "DistanceOfTimeInWords" */;
@@ -387,6 +388,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DistanceOfTimeInWords/DistanceOfTimeInWords-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "DistanceOfTimeInWords/DistanceOfTimeInWords-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -400,6 +402,7 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DistanceOfTimeInWords/DistanceOfTimeInWords-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "DistanceOfTimeInWords/DistanceOfTimeInWords-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
@@ -418,6 +421,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DistanceOfTimeInWordsTests/DistanceOfTimeInWordsTests-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "DistanceOfTimeInWordsTests/DistanceOfTimeInWordsTests-Info.plist";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -440,6 +444,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DistanceOfTimeInWordsTests/DistanceOfTimeInWordsTests-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "DistanceOfTimeInWordsTests/DistanceOfTimeInWordsTests-Info.plist";
 				OTHER_LDFLAGS = (
 					"-framework",
