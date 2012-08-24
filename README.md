@@ -46,4 +46,4 @@ The next two relate to each other. Calling `distanceOfTimeInWords` with no param
 
 Localization
 ------------
-`NSDate+Formatting` uses localized strings, so if you localize your app and provide strings for all that `NSDate+Formatting` uses, your returned string will be localized. The app provides both english and Spanish localizations.
+`NSDate+Formatting` uses localized strings, so if you localize your app and provide strings for all that `NSDate+Formatting` uses, your returned string will be localized. The app provides English, Spanish, Chinese and Portuguese localizations.
