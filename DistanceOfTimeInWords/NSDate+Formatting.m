@@ -27,6 +27,8 @@
 #define SECONDS_PER_MONTH  2592000.0
 #define SECONDS_PER_YEAR   31536000.0
 
+#define LOCALIZED_STRING_TABLE_NAME @"DistanceOfTimeInWordsLocalizable"
+
 @implementation NSDate (formatting)
 
 - (NSString *)formatWithString:(NSString *)format {
@@ -50,24 +52,24 @@
 }
 
 - (NSString *)distanceOfTimeInWords:(NSDate *)date {
-  NSString *Ago      = NSLocalizedString(@"ago", @"Denotes past dates");
-  NSString *FromNow  = NSLocalizedString(@"from now", @"Denotes future dates");
-  NSString *LessThan = NSLocalizedString(@"Less than", @"Indicates a less-than number");
-  NSString *About    = NSLocalizedString(@"About", @"Indicates an approximate number");
-  NSString *Over     = NSLocalizedString(@"Over", @"Indicates an exceeding number");
-  NSString *Almost   = NSLocalizedString(@"Almost", @"Indicates an approaching number");
-  //NSString *Second   = NSLocalizedString(@"second", @"One second in time");
-  NSString *Seconds  = NSLocalizedString(@"seconds", @"More than one second in time");
-  NSString *Minute   = NSLocalizedString(@"minute", @"One minute in time");
-  NSString *Minutes  = NSLocalizedString(@"minutes", @"More than one minute in time");
-  NSString *Hour     = NSLocalizedString(@"hour", @"One hour in time");
-  NSString *Hours    = NSLocalizedString(@"hours", @"More than one hour in time");
-  NSString *Day      = NSLocalizedString(@"day", @"One day in time");
-  NSString *Days     = NSLocalizedString(@"days", @"More than one day in time");
-  NSString *Month    = NSLocalizedString(@"month", @"One month in time");
-  NSString *Months   = NSLocalizedString(@"months", @"More than one month in time");
-  NSString *Year     = NSLocalizedString(@"year", @"One year in time");
-  NSString *Years    = NSLocalizedString(@"years", @"More than one year in time");
+  NSString *Ago      = NSLocalizedStringFromTable(@"ago",       LOCALIZED_STRING_TABLE_NAME, @"Denotes past dates");
+  NSString *FromNow  = NSLocalizedStringFromTable(@"from now",  LOCALIZED_STRING_TABLE_NAME, @"Denotes future dates");
+  NSString *LessThan = NSLocalizedStringFromTable(@"Less than", LOCALIZED_STRING_TABLE_NAME, @"Indicates a less-than number");
+  NSString *About    = NSLocalizedStringFromTable(@"About",     LOCALIZED_STRING_TABLE_NAME, @"Indicates an approximate number");
+  NSString *Over     = NSLocalizedStringFromTable(@"Over",      LOCALIZED_STRING_TABLE_NAME, @"Indicates an exceeding number");
+  NSString *Almost   = NSLocalizedStringFromTable(@"Almost",    LOCALIZED_STRING_TABLE_NAME, @"Indicates an approaching number");
+  //NSString *Second   = NSLocalizedStringFromTable(@"second",  LOCALIZED_STRING_TABLE_NAME, @"One second in time");
+  NSString *Seconds  = NSLocalizedStringFromTable(@"seconds",   LOCALIZED_STRING_TABLE_NAME, @"More than one second in time");
+  NSString *Minute   = NSLocalizedStringFromTable(@"minute",    LOCALIZED_STRING_TABLE_NAME, @"One minute in time");
+  NSString *Minutes  = NSLocalizedStringFromTable(@"minutes",   LOCALIZED_STRING_TABLE_NAME, @"More than one minute in time");
+  NSString *Hour     = NSLocalizedStringFromTable(@"hour",      LOCALIZED_STRING_TABLE_NAME, @"One hour in time");
+  NSString *Hours    = NSLocalizedStringFromTable(@"hours",     LOCALIZED_STRING_TABLE_NAME, @"More than one hour in time");
+  NSString *Day      = NSLocalizedStringFromTable(@"day",       LOCALIZED_STRING_TABLE_NAME, @"One day in time");
+  NSString *Days     = NSLocalizedStringFromTable(@"days",      LOCALIZED_STRING_TABLE_NAME, @"More than one day in time");
+  NSString *Month    = NSLocalizedStringFromTable(@"month",     LOCALIZED_STRING_TABLE_NAME, @"One month in time");
+  NSString *Months   = NSLocalizedStringFromTable(@"months",    LOCALIZED_STRING_TABLE_NAME, @"More than one month in time");
+  NSString *Year     = NSLocalizedStringFromTable(@"year",      LOCALIZED_STRING_TABLE_NAME, @"One year in time");
+  NSString *Years    = NSLocalizedStringFromTable(@"years",     LOCALIZED_STRING_TABLE_NAME, @"More than one year in time");
   
   NSTimeInterval since = [self timeIntervalSinceDate:date];
   NSString *direction = since <= 0.0 ? Ago : FromNow;

@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C701F2681359B29600468818 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C701F26A1359B29600468818 /* Localizable.strings */; };
+		5AD7DE05159E2D2C002BD260 /* DistanceOfTimeInWordsLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C701F26A1359B29600468818 /* DistanceOfTimeInWordsLocalizable.strings */; };
+		C701F2681359B29600468818 /* DistanceOfTimeInWordsLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C701F26A1359B29600468818 /* DistanceOfTimeInWordsLocalizable.strings */; };
 		C7A88B62135460F2006F686D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A88B61135460F2006F686D /* UIKit.framework */; };
 		C7A88B64135460F2006F686D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A88B63135460F2006F686D /* Foundation.framework */; };
 		C7A88B66135460F2006F686D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A88B65135460F2006F686D /* CoreGraphics.framework */; };
@@ -37,9 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		69EAD0211589E57700975F75 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		C701F2691359B29600468818 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		C701F26B1359B2AA00468818 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5AD7DE04159E2D2C002BD260 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/DistanceOfTimeInWordsLocalizable.strings; sourceTree = "<group>"; };
+		69EAD0211589E57700975F75 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/DistanceOfTimeInWordsLocalizable.strings"; sourceTree = "<group>"; };
+		C701F2691359B29600468818 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/DistanceOfTimeInWordsLocalizable.strings; sourceTree = "<group>"; };
+		C701F26B1359B2AA00468818 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/DistanceOfTimeInWordsLocalizable.strings; sourceTree = "<group>"; };
 		C7A88B5D135460F2006F686D /* DistanceOfTimeInWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DistanceOfTimeInWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7A88B61135460F2006F686D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C7A88B63135460F2006F686D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -140,7 +142,7 @@
 				C7A88B6A135460F2006F686D /* InfoPlist.strings */,
 				C7A88B6D135460F2006F686D /* DistanceOfTimeInWords-Prefix.pch */,
 				C7A88B6E135460F2006F686D /* main.m */,
-				C701F26A1359B29600468818 /* Localizable.strings */,
+				C701F26A1359B29600468818 /* DistanceOfTimeInWordsLocalizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -220,6 +222,7 @@
 				en,
 				es,
 				"zh-Hans",
+				pt,
 			);
 			mainGroup = C7A88B52135460F2006F686D;
 			productRefGroup = C7A88B5E135460F2006F686D /* Products */;
@@ -240,7 +243,8 @@
 				C7A88B6C135460F2006F686D /* InfoPlist.strings in Resources */,
 				C7A88B75135460F2006F686D /* MainWindow.xib in Resources */,
 				C7A88B7B135460F2006F686D /* DistanceOfTimeInWordsViewController.xib in Resources */,
-				C701F2681359B29600468818 /* Localizable.strings in Resources */,
+				C701F2681359B29600468818 /* DistanceOfTimeInWordsLocalizable.strings in Resources */,
+				5AD7DE05159E2D2C002BD260 /* DistanceOfTimeInWordsLocalizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,14 +306,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C701F26A1359B29600468818 /* Localizable.strings */ = {
+		C701F26A1359B29600468818 /* DistanceOfTimeInWordsLocalizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C701F2691359B29600468818 /* en */,
 				C701F26B1359B2AA00468818 /* es */,
 				69EAD0211589E57700975F75 /* zh-Hans */,
+				5AD7DE04159E2D2C002BD260 /* pt */,
 			);
-			name = Localizable.strings;
+			name = DistanceOfTimeInWordsLocalizable.strings;
 			sourceTree = "<group>";
 		};
 		C7A88B6A135460F2006F686D /* InfoPlist.strings */ = {
