@@ -38,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		69EAD0211589E57700975F75 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		948F1F1215ECBB9900AAC1C1 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C701F2691359B29600468818 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C701F26B1359B2AA00468818 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C7A88B5D135460F2006F686D /* DistanceOfTimeInWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DistanceOfTimeInWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -309,6 +310,7 @@
 				C701F2691359B29600468818 /* en */,
 				C701F26B1359B2AA00468818 /* es */,
 				69EAD0211589E57700975F75 /* zh-Hans */,
+				948F1F1215ECBB9900AAC1C1 /* ru */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
