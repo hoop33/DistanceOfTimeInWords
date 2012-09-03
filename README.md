@@ -77,7 +77,7 @@ Results "`5 seconds`".
 	
     [[NSDate dateWithTimeInterval:10.0 sinceDate:oldDate] distanceOfTimeInWords:oldDate withOptions:options];
     
-Results "`Just now`" for the first call and "`10 seconds` for the second call (i.e., the `kDOTIWStringComponentJustNow` component overrides others while the time interval between the defined dates (e.g. the received date and now) is smaller than 5 (five) seconds).
+Results "`Just now`" for the first call and "`10 seconds`" for the second call (i.e., the `kDOTIWStringComponentJustNow` component overrides others while the time interval between the defined dates (e.g. the received date and oldDate) is smaller than 5 (five) seconds).
 
 Localization
 ------------
