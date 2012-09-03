@@ -75,7 +75,7 @@ Results "`5 seconds`".
 	
 	[[NSDate date] distanceOfTimeInWordsWithOptions:dotiwOptions]
 	
-    [[NSDate dateWithTimeInterval:10.0 sinceDate:oldDate] distanceOfTimeInWordsWithOptions:dotiwOptions]
+    [[NSDate dateWithTimeInterval:10.0 sinceDate:oldDate] distanceOfTimeInWordsWithOptions:dotiwOptions] // will print "10 seconds".
     
 Results "`Just now`" for the first call and "`10 seconds` for the second call (i.e., the `kDOTIWStringComponentJustNow` component overrides others while the time interval between the defined dates (e.g. the received date and now) is smaller than 5 (five) seconds).
 
