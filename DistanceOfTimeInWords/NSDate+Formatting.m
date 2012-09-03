@@ -21,11 +21,12 @@
 
 #import "NSDate+Formatting.h"
 
-#define SECONDS_PER_MINUTE 60.0
-#define SECONDS_PER_HOUR   3600.0
-#define SECONDS_PER_DAY    86400.0
-#define SECONDS_PER_MONTH  2592000.0
-#define SECONDS_PER_YEAR   31536000.0
+#define SECONDS_JUST_NOW_LIMIT 5.0
+#define SECONDS_PER_MINUTE     60.0
+#define SECONDS_PER_HOUR       3600.0
+#define SECONDS_PER_DAY        86400.0
+#define SECONDS_PER_MONTH      2592000.0
+#define SECONDS_PER_YEAR       31536000.0
 
 #define LOCALIZED_STRING_TABLE_NAME @"DistanceOfTimeInWordsLocalizable"
 
@@ -52,6 +53,26 @@
 }
 
 - (NSString *)distanceOfTimeInWords:(NSDate *)date {
+    
+  NSUInteger allOptionsEnabledByDefault =
+    kDOTIWStringComponentModifier |
+    kDOTIWStringComponentNumber   |
+    kDOTIWStringComponentMeasure  |
+    kDOTIWStringComponentDirection;
+
+  return [self distanceOfTimeInWords:date withOptions:allOptionsEnabledByDefault];
+}
+    
+- (NSString *)distanceOfTimeInWordsWithOptions:(NSUInteger)options {
+  return [self distanceOfTimeInWords:[NSDate date] withOptions:options];
+}
+
+- (NSString *)distanceOfTimeInWords:(NSDate *)date withOptions:(NSUInteger)options {
+    
+  if (options & kDOTIWStringComponentJustNow)
+      if (fabs([self timeIntervalSinceDate:date]) < SECONDS_JUST_NOW_LIMIT)
+        return NSLocalizedStringFromTable(@"Just now", LOCALIZED_STRING_TABLE_NAME, @"Indicates a recent action");
+    
   NSString *Ago      = NSLocalizedStringFromTable(@"ago",       LOCALIZED_STRING_TABLE_NAME, @"Denotes past dates");
   NSString *FromNow  = NSLocalizedStringFromTable(@"from now",  LOCALIZED_STRING_TABLE_NAME, @"Denotes future dates");
   NSString *LessThan = NSLocalizedStringFromTable(@"Less than", LOCALIZED_STRING_TABLE_NAME, @"Indicates a less-than number");
@@ -168,7 +189,19 @@
   if ([modifier length] > 0) {
     modifier = [modifier stringByAppendingString:@" "];
   }
-  return [NSString stringWithFormat:@"%@%d %@ %@", modifier, number, measure, direction];
+    
+  NSMutableString *resultString = [NSMutableString new];
+    
+  if (options & kDOTIWStringComponentModifier)
+    [resultString appendString:[NSString stringWithFormat:@"%@", modifier]];
+  if (options & kDOTIWStringComponentNumber)
+    [resultString appendString:[NSString stringWithFormat:@"%d", number]];
+  if (options & kDOTIWStringComponentMeasure)
+    [resultString appendString:[NSString stringWithFormat:@" %@", measure]];
+  if (options & kDOTIWStringComponentDirection)
+    [resultString appendString:[NSString stringWithFormat:@" %@", direction]];
+    
+  return resultString;
 }
 
 @end
