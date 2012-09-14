@@ -44,6 +44,41 @@ The next two relate to each other. Calling `distanceOfTimeInWords` with no param
 * `[[NSDate date] distanceOfTimeInWords];`
 * `[[NSDate date] distanceOfTimeInWords:[[NSDate date] dateByAddingTimeInterval:86400]];`
 
+Formatting date strings
+----------------------------
+These two methods are now available for formatting resulting date strings:
+
+* `- (NSString *)distanceOfTimeInWordsWithOptions:(NSUInteger)options;`
+* `- (NSString *)distanceOfTimeInWords:(NSDate *)date withOptions:(NSUInteger)options;`
+
+Both presented methods are accepting a bitmask formed with the following options:
+
+- kDOTIWStringComponentModifier;
+- kDOTIWStringComponentNumber;
+- kDOTIWStringComponentMeasure;
+- kDOTIWStringComponentDirection;
+- kDOTIWStringComponentJustNow; `Disabled by default.`
+
+For instance:
+
+	[[NSDate date] distanceOfTimeInWords]; 
+	
+Results "`Less than 5 seconds ago`".
+	
+	NSUInteger dotiwOptions = kDOTIWStringComponentNumber | kDOTIWStringComponentMeasure;
+	
+	[[NSDate date] distanceOfTimeInWordsWithOptions:dotiwOptions]
+	
+Results "`5 seconds`".
+	
+	dotiwOptions = kDOTIWStringComponentNumber | kDOTIWStringComponentMeasure | kDOTIWStringComponentJustNow;
+	
+	[[NSDate date] distanceOfTimeInWordsWithOptions:dotiwOptions]
+	
+    [[NSDate dateWithTimeInterval:10.0 sinceDate:oldDate] distanceOfTimeInWords:oldDate withOptions:options];
+    
+Results "`Just now`" for the first call and "`10 seconds`" for the second call (i.e., the `kDOTIWStringComponentJustNow` component overrides others while the time interval between the defined dates (e.g. the received date and oldDate) is smaller than 5 (five) seconds).
+
 Localization
 ------------
-`NSDate+Formatting` uses localized strings, so if you localize your app and provide strings for all that `NSDate+Formatting` uses, your returned string will be localized. The app provides both english and Spanish localizations.
+`NSDate+Formatting` uses localized strings, so if you localize your app and provide strings for all that `NSDate+Formatting` uses, your returned string will be localized. The app provides English, Spanish, Chinese and Portuguese localizations.
