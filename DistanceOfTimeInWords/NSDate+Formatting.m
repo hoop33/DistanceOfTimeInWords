@@ -190,7 +190,7 @@
     modifier = [modifier stringByAppendingString:@" "];
   }
     
-  NSMutableString *resultString = [NSMutableString new];
+  NSMutableString *resultString = [NSMutableString string];
     
   if (options & kDOTIWStringComponentModifier)
     [resultString appendString:[NSString stringWithFormat:@"%@", modifier]];
